@@ -17,6 +17,9 @@ import {
   faPaw,
   faCircleRight,
   faCircleLeft,
+  faIcons,
+  faHeart,
+  faRuler,
 } from "@fortawesome/free-solid-svg-icons";
 import "./assets/main.css";
 library.add(
@@ -32,7 +35,10 @@ library.add(
   faHouse,
   faPaw,
   faCircleRight,
-  faCircleLeft
+  faCircleLeft,
+  faIcons,
+  faHeart,
+  faRuler
 );
 
 const app = createApp(App);

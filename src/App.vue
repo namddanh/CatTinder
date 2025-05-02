@@ -3,12 +3,11 @@
 <template>
   <header class="cat-header">
     <font-awesome-icon icon="fa-solid fa-user" class="icon" />
-
     <font-awesome-icon icon="fa-solid fa-sliders" class="icon" />
     <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon" />
     <font-awesome-icon icon="fa-solid fa-paw" class="icon" />
-    <font-awesome-icon icon="fa-solid fa-circle-right" class="icon" />
-    <font-awesome-icon icon="fa-solid fa-circle-left" class="icon" />
+    <font-awesome-icon icon="fa-solid fa-icons" class="icon" />
+    <font-awesome-icon icon="fa-solid fa-heart" class="icon" />
     <!-- 😻 -->
     <h3>
       <font-awesome-icon
@@ -19,7 +18,7 @@
   </header>
 
   <div class="cat-preview-container">
-    <div class="card-preview-card">
+    <div class="cat-card">
       <img
         class="cat-preview-img"
         src="https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg"
@@ -32,10 +31,10 @@
             <font-awesome-icon icon="fa-solid fa-check-circle" class="icon" />
           </h3>
         </div>
-        <div class="cat-preview-location">
+        <div v-if="true" class="cat-preview-location">
           <h4>
-            <font-awesome-icon icon="fa-solid fa-house" class="icon" />Lives in
-            Toronto
+            <font-awesome-icon icon="fa-solid fa-house" class="icon" />
+            Lives in Toronto
           </h4>
           <h4>
             <font-awesome-icon icon="fa-solid fa-location-dot" class="icon" />
@@ -43,10 +42,36 @@
           </h4>
         </div>
         <div class="cat-preview-interests">
-          <h3>
-            <font-awesome-icon icon="fa-solid fa-paw" class="icon" />Interests
-          </h3>
+          <h4>
+            <font-awesome-icon icon="fa-solid fa-icons" class="icon" />
+            Interests
+          </h4>
+          <h4>Active Lifestyle, Ice Cream, Reading</h4>
         </div>
+        <div class="cat-preview-height">
+          <h4>
+            <font-awesome-icon icon="fa-solid fa-ruler" class="icon" />
+            30cm
+          </h4>
+        </div>
+        <div class="cat-preview-looking-for">
+          <h4>
+            <font-awesome-icon
+              icon="fa-solid fa-magnifying-glass"
+              class="icon"
+            />
+            Looking for
+          </h4>
+          <h4>😻 Long term, open to short</h4>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-left">
+        <font-awesome-icon icon="fa-solid fa-circle-left" class="icon" />
+      </div>
+      <div class="swiper-right">
+        <font-awesome-icon icon="fa-solid fa-circle-right" class="icon" />
       </div>
     </div>
   </div>
@@ -61,7 +86,7 @@
 
   .cat-preview-container {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +94,7 @@
     background-color: bisque;
   }
 
-  .card-preview-card {
+  .cat-card {
     display: flex;
     flex-direction: column;
     width: 750px;
@@ -94,5 +119,27 @@
   .cat-preview-description h4 {
     color: #a74c49;
     font-weight: bold;
+  }
+
+  .swiper-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    color: #a74c49;
+    font-size: 50px;
+  }
+
+  .swiper-left,
+  .swiper-right {
+    color: #a74c49;
+    cursor: pointer;
+    font-size: 50px;
+    transition: transform 0.2s ease;
+  }
+
+  .swiper-left:hover,
+  .swiper-right:hover {
+    transform: scale(1.2);
   }
 </style>

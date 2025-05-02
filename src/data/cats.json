@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Kip",
+    "age": 3,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Toronto",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 2,
+    "name": "Whiskers",
+    "age": 5,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Montreal",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 3,
+    "name": "Kevin",
+    "age": 20,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Vancouver",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 4,
+    "name": "Mocha",
+    "age": 1,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Buffalo",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 5,
+    "name": "Puffins",
+    "age": 11,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "New York",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 6,
+    "name": "Dice",
+    "age": 14,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Markham",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 7,
+    "name": "Latte",
+    "age": 6,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "London",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 8,
+    "name": "Zoe",
+    "age": 13,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Toronto",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 9,
+    "name": "Sundae",
+    "age": 14,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Brampton",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 10,
+    "name": "Monkey",
+    "age": 30,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Pickering",
+    "bio": "Loves naps and tuna."
+  },
+  {
+    "id": 11,
+    "name": "Oreo",
+    "age": 1,
+    "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
+    "location": "Barrie",
+    "bio": "Loves naps and tuna."
+  }
+]
