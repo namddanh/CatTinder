@@ -2,26 +2,32 @@
   import c from "./data/cats.json";
   import Card from "./components/Card.vue";
   import SwipeButtons from "./components/SwipeButtons.vue";
-  import { ref, watch, computed } from "vue";
+  import MatchModal from "./components/MatchModal.vue";
+  import { ref, watch, computed, onMounted } from "vue";
 
   const cats = ref(c); // cat infos
-  console.log("c", c);
-  console.log("cats", cats);
-  console.log("cats.value", cats.value);
-  console.log("cats.value[0]", cats.value[0]);
-  console.log("cats.value.length", cats.value.length);
   const currentIndex = ref(0); // start with first cat
   const likedCats = ref([]);
   const dislikedCats = ref([]);
+  const showMatchModal = ref(false);
+  const matchedCat = ref({});
 
   const currentCat = computed(() => cats.value[currentIndex.value]); // provides the cat at the current position
 
-  watch(currentCat, (newCat, oldCat) =>
-    console.log(`Switch from ${oldCat} to ${newCat}`)
-  ); // lets me know when we switch to a new cat
+  // Save to localStorage whenever likedCats changes
+  watch(
+    likedCats,
+    () => {
+      localStorage.setItem("likedCats", JSON.stringify(likedCats.value));
+    },
+    { deep: true }
+  );
 
-  console.log(currentIndex.value);
-  console.log(cats.value.length - 1);
+  // Load from localStorage on component mount
+  onMounted(() => {
+    const stored = localStorage.getItem("likedCats");
+    if (stored) likedCats.value = JSON.parse(stored);
+  });
 
   const nextCat = () => {
     if (currentIndex.value < cats.value.length - 1) {
@@ -29,13 +35,6 @@
     } else {
       alert("No more cats!");
     }
-
-    // return currentCat.value < cats.value.length - 1
-    //   ? currentIndex.value++
-    //   : alert("No more cats!");
-
-    // if (currentIndex.value > cats.value.length) return;
-    // currentIndex.value++;
   };
 
   const swipeLeft = () => {
@@ -44,19 +43,26 @@
   };
 
   const swipeRight = () => {
-    likedCats.value.push(currentCat.value);
+    const cat = currentCat.value;
+    likedCats.value.push(cat);
+
+    if (cat.isMatched) {
+      showMatchModal.value = true;
+      matchedCat.value = cat;
+    } else showMatchModal.value = false;
+
     nextCat();
   };
 </script>
 
 <template>
   <header class="cat-header">
-    <font-awesome-icon icon="fa-solid fa-user" class="icon" />
+    <!-- <font-awesome-icon icon="fa-solid fa-user" class="icon" />
     <font-awesome-icon icon="fa-solid fa-sliders" class="icon" />
     <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon" />
     <font-awesome-icon icon="fa-solid fa-paw" class="icon" />
     <font-awesome-icon icon="fa-solid fa-icons" class="icon" />
-    <font-awesome-icon icon="fa-solid fa-heart" class="icon" />
+    <font-awesome-icon icon="fa-solid fa-heart" class="icon" /> -->
     <!-- 😻 -->
     <h3>
       <font-awesome-icon icon="fa-solid fa-cat" class="icon" />
@@ -72,6 +78,7 @@
   <div class="cat-preview-container">
     <Card v-if="currentCat" :cat="currentCat" />
     <SwipeButtons @like="swipeRight" @dislike="swipeLeft" />
+    <MatchModal v-if="showMatchModal" :matchedCat="matchedCat" />
   </div>
 </template>
 

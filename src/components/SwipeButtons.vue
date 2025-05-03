@@ -12,10 +12,10 @@
 
 <template>
   <div class="swiper-container">
-    <div class="swiper-left" @click="emitLike()">
+    <div class="swiper-left" @click="emitDislike()">
       <font-awesome-icon icon="fa-solid fa-circle-left" class="icon" />
     </div>
-    <div class="swiper-right" @click="emitDislike()">
+    <div class="swiper-right" @click="emitLike()">
       <font-awesome-icon icon="fa-solid fa-circle-right" class="icon" />
     </div>
   </div>
