@@ -5,6 +5,97 @@
     "age": 3,
     "img": "https://t4.ftcdn.net/jpg/02/66/72/41/360_F_266724172_Iy8gdKgMa7XmrhYYxLCxyhx6J7070Pr8.jpg",
     "location": "Toronto",
-    "bio": "Loves naps and tuna."
+    "bio": "Loves naps and tuna.",
+    "isMatched": false
+  },
+  {
+    "id": 2,
+    "name": "Whiskers",
+    "age": 5,
+    "img": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg",
+    "location": "Montreal",
+    "bio": "Loves naps and tuna.",
+    "isMatched": false
+  },
+  {
+    "id": 3,
+    "name": "Kevin",
+    "age": 20,
+    "img": "https://media-cdn.tripadvisor.com/media/photo-p/12/bf/57/f4/cat-that-looks-like-an.jpg",
+    "location": "Vancouver",
+    "bio": "Loves naps and tuna.",
+    "isMatched": true
+  },
+  {
+    "id": 4,
+    "name": "Mocha",
+    "age": 1,
+    "img": "https://t4.ftcdn.net/jpg/11/19/84/17/360_F_1119841769_YzAHOlKJpL6cltE7LxFlJ96veDiOm6FP.jpg",
+    "location": "Buffalo",
+    "bio": "Loves naps and tuna.",
+    "isMatched": false
+  },
+  {
+    "id": 5,
+    "name": "Puffins",
+    "age": 11,
+    "img": "https://www.adoptapet.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fscac5p2hkp4h%2F6Rojzo6Q52XZc9nZbuXGQs%2Ff075138951d993ec595eff02343fcdf1%2Faap-inline-fluffy-cats-himalayan.jpg&w=1920&q=75",
+    "location": "New York",
+    "bio": "Loves naps and tuna.",
+    "isMatched": false
+  },
+  {
+    "id": 6,
+    "name": "Dice",
+    "age": 14,
+    "img": "https://animalwellnessmagazine.com/wp-content/uploads/18581119_445885962441017_3995894352218947584_n-e1509563328874.jpg",
+    "location": "Markham",
+    "bio": "Loves naps and tuna.",
+    "isMatched": false
+  },
+  {
+    "id": 7,
+    "name": "Latte",
+    "age": 6,
+    "img": "https://cats.com/wp-content/uploads/2022/05/Brown-Cat-compressed.jpg",
+    "location": "London",
+    "bio": "Loves naps and tuna.",
+    "isMatched": true
+  },
+  {
+    "id": 8,
+    "name": "Zoe",
+    "age": 13,
+    "img": "https://www.cuteness.com/cuteness/18-extremely-fluffy-cats-for-your-enjoyment/4afd9582eca14cb3be9d3117af91480f.png",
+    "location": "Toronto",
+    "bio": "Loves naps and tuna.",
+    "isMatched": false
+  },
+  {
+    "id": 9,
+    "name": "Sundae",
+    "age": 14,
+    "img": "https://sparrows-garden.com/images/photos/fawntabby.jpg",
+    "location": "Brampton",
+    "bio": "Loves naps and tuna.",
+    "isMatched": true
+  },
+  {
+    "id": 10,
+    "name": "Monkey",
+    "age": 30,
+    "img": "https://www.balisafarimarinepark.com/wp-content/uploads/2019/02/Get-to-know-the-Proboscis-Monkey-2-600x315-cropped.jpg",
+    "location": "Pickering",
+    "bio": "Loves naps and tuna.",
+    "isMatched": true
+  },
+  {
+    "id": 11,
+    "name": "Oreo",
+    "age": 1,
+    "img": "https://i.pinimg.com/564x/58/b3/a6/58b3a6cb0477b80fcff334ea5569d3d7.jpg",
+    "location": "Barrie",
+    "bio": "Loves naps and tuna.",
+    "isMatched": false
   }
 ]
