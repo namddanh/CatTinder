@@ -1,11 +1,11 @@
 <script setup>
   import { defineProps } from "vue";
 
-  const { cats } = defineProps(["cats"]);
+  const { cat } = defineProps(["cat"]);
 </script>
 
 <template>
-  <div v-for="cat in cats" :key="cat.id" class="cat-card">
+  <div class="cat-card">
     <img class="cat-preview-img" :src="cat.img" alt="" />
     <div class="cat-preview-description">
       <div class="cat-preview-intro">
