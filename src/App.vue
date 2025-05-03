@@ -31,7 +31,7 @@
 
   <div class="cat-preview-container">
     <Card v-for="cat in cats" :key="cat.id" :cats="cats" />
-    <SwipeButtons />
+    <SwipeButtons @like="swipeRight" @dislike="swipeLeft" />
   </div>
 </template>
 
