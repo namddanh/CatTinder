@@ -21,6 +21,7 @@ import {
   faIcons,
   faHeart,
   faRuler,
+  faThumbsDown,
 } from "@fortawesome/free-solid-svg-icons";
 import "./assets/main.css";
 library.add(
@@ -39,7 +40,8 @@ library.add(
   faCircleLeft,
   faIcons,
   faHeart,
-  faRuler
+  faRuler,
+  faThumbsDown
 );
 
 const app = createApp(App);
