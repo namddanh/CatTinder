@@ -1,0 +1,9 @@
+/* assets/styles/variables.css */
+:root {
+  --color-primary: #a74c49;
+  --color-secondary: #dd7572;
+  --color-accent: #f7bc78;
+  --color-background-ct: bisque;
+  --color-text-ct: #704e28;
+  --color-muted: #cccccc;
+}

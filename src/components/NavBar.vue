@@ -17,7 +17,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
-    background-color: #a74c49;
-    color: rgb(247 188 120);
+    background-color: var(--color-primary);
+    color: var(--color-accent);
   }
 </style>

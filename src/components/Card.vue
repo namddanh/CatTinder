@@ -67,12 +67,12 @@
     align-self: left;
     text-align: left;
     padding: 10px;
-    background-color: rgb(247 188 120);
+    background-color: var(--color-accent);
   }
 
   .cat-preview-description h3,
   .cat-preview-description h4 {
-    color: #a74c49;
+    color: var(--color-primary);
     font-weight: bold;
   }
 </style>

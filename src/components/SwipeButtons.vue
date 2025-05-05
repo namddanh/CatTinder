@@ -27,13 +27,12 @@
     justify-content: center;
     gap: 40px;
     margin-top: 20px;
-    color: #a74c49;
     font-size: 50px;
   }
 
   .swiper-left,
   .swiper-right {
-    color: #a74c49;
+    color: var(--color-primary);
     cursor: pointer;
     font-size: 50px;
     transition: transform 0.2s ease;
